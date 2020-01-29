@@ -1,0 +1,33 @@
+
+
+#Make a character Speak
+	characterName "dialogue"																											ex: Raelin "How are you?"
+	+ symbol makes dialogue additive to continue from last segment								ex: Raelin +"Are you feeling ohk?"
+	No name before dialogue means use last speaker																ex +"Thats good to hear"
+
+#Change Character Expression
+	setExpression(characterName,region,expressionName)														ex: setExpression(Raelin,face,happy01)
+																																								or  setExpression(Raelin,body,happy01)
+	*optional parameters
+		1)speed of transition																												ex: setExpression(Raelin,face,happy01,1.0)
+
+#Move Characters On Screen
+	move(characterName,targetLocationX,targetLocationY)														ex: move(Raelin,0.3,0.7)
+
+	*optional parameter
+		1)speed of movement																													ex: move(Raelin,0.3,0.7,1.0)
+
+	setPosition(characterName,targetLocationX,targetLocationY)										ex: setPosition(Raelin,0.3,0.7)
+
+#Change Background Layer Image
+	setBackground(imageName)																											ex: setBackground(forest)
+	setCinematic(imageName)																												ex: setCinematic(forest)
+	setForeground(imageName)																											ex: ex: setForeground(forest)
+
+	*optional parameters
+		1)speed of transition																												ex: set________(forest,1,0)
+
+#Play sound and music
+
+	playSound(soundName)																													ex: playSound(siren)
+	playMusic(songName)																														ex: playMusic(suspense)

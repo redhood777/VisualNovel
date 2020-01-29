@@ -1,0 +1,7 @@
+{
+	"itemName":"Diamond Sword",
+	"itemDesc":"A Legendary sword",
+	"itemID":3,
+	"goldValue":100,
+	"power":10.0
+}

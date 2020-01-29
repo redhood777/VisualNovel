@@ -1,0 +1,22 @@
+Raelin "Hi my name is Raelin. Whats yours?" playMusic(music_1)
+
+"Wait- " setBackground(forest)
+
++"You killed the bandits out there?!"
+
+narrator "Her face lit up in astonishment"
+
+"Her eyes, traversing up and down, simply cudnt belif wat she was hearing"
+
+Raelin "<b>You?!</b>" move(Raelin,0.7,0)
+
+narrator "She said jumping back"
+
+Raelin "Where will we go today?"
+
+"Do you even have a plan?"
+
+playMusic(peacefulForest)
+
+setPosition(Raelin,0.7,1)
+s

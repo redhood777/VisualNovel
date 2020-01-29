@@ -1,0 +1,7 @@
+{
+	"itemName":"Stone Sword",
+	"itemDesc":"A rocky sword",
+	"itemID":1,
+	"goldValue":20,
+	"power":2.0
+}
