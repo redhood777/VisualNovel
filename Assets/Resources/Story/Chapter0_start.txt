@@ -1,22 +1,13 @@
-Raelin "Hi my name is Raelin. Whats yours?" playMusic(music_1)
+Raelin "Hello there"
 
-"Wait- " setBackground(forest)
++"..This is a test to check if events are working"
 
-+"You killed the bandits out there?!"
+"Press teh button to continue"
 
-narrator "Her face lit up in astonishment"
+stopDialogue()
 
-"Her eyes, traversing up and down, simply cudnt belif wat she was hearing"
+"DialogueStopped..if u see this bug"
 
-Raelin "<b>You?!</b>" move(Raelin,0.7,0)
+startDialogue()
 
-narrator "She said jumping back"
-
-Raelin "Where will we go today?"
-
-"Do you even have a plan?"
-
-playMusic(peacefulForest)
-
-setPosition(Raelin,0.7,1)
-s
+"That was NOICE"

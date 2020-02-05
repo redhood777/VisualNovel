@@ -77,4 +77,14 @@ public class CharacterManager : MonoBehaviour
 		public Vector2 topLeft = new Vector2 (0, 1f);
 	}
 	public static CHARACTERPOSITIONS characterPositions = new CHARACTERPOSITIONS();
+
+	public class CHARACTEREXPRESSIONS
+	{
+		public int normal = 0;
+		public int shy = 1;
+		public int normalAngle = 2;
+		public int conjoinedFingers = 3;
+	}
+
+	public static CHARACTEREXPRESSIONS characterExpressions = new CHARACTEREXPRESSIONS();
 }

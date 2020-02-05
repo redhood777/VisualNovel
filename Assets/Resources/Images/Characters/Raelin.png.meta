@@ -4,76 +4,76 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4945437208809926602
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_0
+    second: FrontAngle
   - first:
       213: 804702572747838577
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_1
+    second: FrontAngleC
   - first:
       213: -608477457440057391
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_2
+    second: SideAngle
   - first:
       213: 8493238466760559169
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_3
+    second: SideAngleC
   - first:
       213: -7166449183496246901
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_4
+    second: angry
   - first:
       213: -5762127200797985675
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_5
+    second: Raelin_angry1
   - first:
       213: -7709005579427082529
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_6
+    second: blush
   - first:
       213: -7852274850374459886
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_7
+    second: blush1
   - first:
       213: 6919418078747933614
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_8
+    second: happy
   - first:
       213: 5316320294190556051
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_9
+    second: happy1
   - first:
       213: -3246500652596084924
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_10
+    second: sad
   - first:
       213: -6330000105258512536
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_11
+    second: sad1
   - first:
       213: -4184557335458620157
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_12
+    second: naughty
   - first:
       213: 7823006434509783008
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_13
+    second: naughty1
   - first:
       213: 3418632681914798613
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_14
+    second: blank
   - first:
       213: -6897545519733073516
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_15
+    second: blank1
   - first:
       213: -7199222794102139009
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_16
+    second: concerned
   - first:
       213: 3363633090121785500
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_17
+    second: concerned1
   - first:
       213: -7060294983855132243
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_18
+    second: surprised
   - first:
       213: -5575986727612406783
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_19
+    second: surprised1
   - first:
       213: -4695246034005386753
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_20
+    second: meh
   - first:
       213: -156649955218105828
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_21
+    second: meh1
   - first:
       213: 2853738172364525880
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_22
+    second: lastMeh
   - first:
       213: -2668323202185810763
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_23
+    second: lastMeh1
   - first:
       213: -7917095455086176466
     second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_24
@@ -173,7 +173,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_0
+      name: FrontAngle
       rect:
         serializedVersion: 2
         x: 4
@@ -181,7 +181,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_1
+      name: FrontAngleC
       rect:
         serializedVersion: 2
         x: 487
@@ -202,7 +202,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_2
+      name: SideAngle
       rect:
         serializedVersion: 2
         x: 4
@@ -223,7 +223,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_3
+      name: SideAngleC
       rect:
         serializedVersion: 2
         x: 487
@@ -244,7 +244,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_4
+      name: angry
       rect:
         serializedVersion: 2
         x: 4
@@ -265,7 +265,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_5
+      name: Raelin_angry1
       rect:
         serializedVersion: 2
         x: 487
@@ -286,7 +286,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_6
+      name: blush
       rect:
         serializedVersion: 2
         x: 4
@@ -307,7 +307,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,15 +320,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_7
+      name: blush1
       rect:
         serializedVersion: 2
-        x: 487
-        y: 5788
+        x: 484
+        y: 5791
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,15 +341,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_8
+      name: happy
       rect:
         serializedVersion: 2
-        x: 4
+        x: 10
         y: 5065
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_9
+      name: happy1
       rect:
         serializedVersion: 2
         x: 487
@@ -370,7 +370,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,15 +383,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_10
+      name: sad
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4342
+        x: 10
+        y: 4336
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,7 +404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_11
+      name: sad1
       rect:
         serializedVersion: 2
         x: 487
@@ -412,7 +412,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_12
+      name: naughty
       rect:
         serializedVersion: 2
         x: 4
@@ -433,7 +433,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,7 +446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_13
+      name: naughty1
       rect:
         serializedVersion: 2
         x: 487
@@ -454,7 +454,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,7 +467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_14
+      name: blank
       rect:
         serializedVersion: 2
         x: 4
@@ -475,7 +475,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -488,15 +488,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_15
+      name: blank1
       rect:
         serializedVersion: 2
-        x: 487
-        y: 2896
+        x: 490
+        y: 2893
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,15 +509,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_16
+      name: concerned
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2173
+        x: 7
+        y: 2170
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,7 +530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_17
+      name: concerned1
       rect:
         serializedVersion: 2
         x: 487
@@ -538,7 +538,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -551,7 +551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_18
+      name: surprised
       rect:
         serializedVersion: 2
         x: 4
@@ -559,7 +559,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_19
+      name: surprised1
       rect:
         serializedVersion: 2
         x: 487
@@ -580,7 +580,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,7 +593,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_20
+      name: meh
       rect:
         serializedVersion: 2
         x: 4
@@ -601,7 +601,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,7 +614,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_21
+      name: meh1
       rect:
         serializedVersion: 2
         x: 487
@@ -622,7 +622,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,7 +635,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_22
+      name: lastMeh
       rect:
         serializedVersion: 2
         x: 4
@@ -643,7 +643,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,7 +656,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_23
+      name: lastMeh1
       rect:
         serializedVersion: 2
         x: 487
@@ -664,7 +664,7 @@ TextureImporter:
         width: 476
         height: 717
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

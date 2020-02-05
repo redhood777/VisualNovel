@@ -109,12 +109,48 @@ public class NovelController : MonoBehaviour
             Command_SetLayerImage(data[1], BCFC.instance.foreground);
             return;
         }
+        if(data[0] == "playMusic")
+        {
+            Command_PlayMusic(data[1]);
+            return;
+        }
+        if (data[0] == "playSound")
+        {
+            Command_PlaySound(data[1]);
+            return;
+        }
+        if (data[0] == "move")
+        {
+            Command_Move(data[1]);
+            return;
+        }
+        if(data[0] == "setPosition")
+        {
+            Command_SetPosition(data[1]);
+            return;
+        }
+        if(data[0] == "setExpression")
+        {
+            Command_SetExpression(data[1]);
+            return;
+        }
+        if (data[0] == "stopDialogue")
+        {
+            Command_StopDialogue();
+            return;
+        }
+
+        if (data[0] == "startDialogue")
+        {
+            Command_StartDialogue();
+            return;
+        }
     }
 
     void Command_SetLayerImage(string data, BCFC.LAYER layer)
     {
         string texName = data.Contains(",") ? data.Split(',')[0] : data;
-        Texture2D tex = Resources.Load("Images/UI/Backdrops/" + texName) as Texture2D;
+        Texture2D tex = texName == null ?null : Resources.Load("Images/UI/Backdrops/" + texName) as Texture2D;
         float spd = 2f;
         bool smooth = false;
 
@@ -134,4 +170,78 @@ public class NovelController : MonoBehaviour
 
         layer.TransitionToTexture(tex, spd, smooth);
     }
+
+    void Command_PlaySound(string data)
+    {
+        AudioClip clip = Resources.Load("Audio/SFX/" + data) as AudioClip;
+
+        if (clip != null)
+            AudioManager.instance.PLaySFX(clip);
+        else
+            Debug.LogError("Clip does not exist - " + data);
+
+    }
+
+    void Command_PlayMusic(string data)
+    {
+        AudioClip clip = Resources.Load("Audio/Music/" + data) as AudioClip;
+
+        if (clip != null)
+            AudioManager.instance.PlaySong(clip);
+        else
+            Debug.LogError("Clip does not exist - " + data);
+    }
+
+    void Command_Move(string data)
+    {
+        string[] parameters = data.Split(',');
+        string character = parameters[0];
+        float locationX = float.Parse(parameters[1]);
+        float locationY = float.Parse(parameters[2]);
+        float speed = parameters.Length == 4 ? float.Parse(parameters[3]) : 1f;
+
+        Character c = CharacterManager.instance.GetCharacter(character);
+        c.MoveTo(new Vector2(locationX, locationY), speed);
+       
+
+    }
+
+    void Command_SetPosition(string data)
+    {
+        string[] parameters = data.Split(',');
+        string character = parameters[0];
+        float locationX = float.Parse(parameters[1]);
+        float locationY = float.Parse(parameters[2]);
+
+        Character c = CharacterManager.instance.GetCharacter(character);
+        c.SetPosition(new Vector2(locationX, locationY));
+    }
+
+    void Command_SetExpression(string data)
+    {
+        string[] parameters = data.Split(',');
+        string character = parameters[0];
+        string region = parameters[1];
+        string expression = (parameters[2]);
+        float speed = parameters.Length == 4 ? float.Parse(parameters[3]) : 1f;
+
+        Character c = CharacterManager.instance.GetCharacter(character);
+        Sprite sprite = c.GetSprite(expression);
+
+        if (region.ToLower() == "body")
+            c.TransitionBody(sprite, speed, false);
+        if (region.ToLower() == "face")
+            c.TransitionExpression(sprite, speed, false);
+    }
+
+    void Command_StopDialogue()
+    {
+        TutorialEvents.instance.DisableDialogue();
+    }
+
+    void Command_StartDialogue()
+    {
+        TutorialEvents.instance.EnableDialogue();
+    }
+   
 }
