@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorialEvents : MonoBehaviour
 {
 
     bool pressed = false;
-    public GameObject speechSystem;
+    public GameObject photo;
+    
     // Start is called before the first frame update
 
     public static TutorialEvents instance;
@@ -32,25 +34,9 @@ public class TutorialEvents : MonoBehaviour
         Debug.Log(pressed);
     }
 
-    public void DisableDialogue()
+    public void ShowImage()
     {
-        StopAllCoroutines();
-        //DialogueSystem.instance.StopSpeaking();
-        speechSystem.SetActive(false);
-        //StopCoroutine(DialogueSystem.instance.StopSpeaking());
-       
+        photo.SetActive(true);
     }
 
-    public void EnableDialogue()
-    {
-        
-        if (pressed == true)
-            speechSystem.SetActive(true);
-        else
-            speechSystem.SetActive(false);
-        //if (pressed = true)
-           // DialogueSystem.instance.Say();
-
-        //pressed = false;
-    }
 }

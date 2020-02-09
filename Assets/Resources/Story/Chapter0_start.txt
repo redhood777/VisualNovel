@@ -1,13 +1,13 @@
-Raelin "Hello there"
+Raelin "Hello there" 
 
 +"..This is a test to check if events are working"
 
+setExpression(Raelin,body,FrontAngleC,5)
+
 "Press teh button to continue"
 
-stopDialogue()
+enableImage()
 
 "DialogueStopped..if u see this bug"
-
-startDialogue()
 
 "That was NOICE"

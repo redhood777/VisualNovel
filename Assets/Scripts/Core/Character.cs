@@ -115,22 +115,25 @@ public class Character
 	}
 
 	//Begin Transitioning Images\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	public Sprite GetSprite(string spriteName = "")
-	{
 
-		Sprite sprite = Resources.Load<Sprite>(string.Format("Images/Characters/{0}_{1}", characterName, spriteName));
-		//Debug.Log(sprite.name);
-		return sprite;
+	//public Sprite GetSprite(int index)
+	//{
+	//	Sprite[] sprites = Resources.LoadAll<Sprite>("Images/Characters/" + characterName);
+	//	return sprites[index];
+	//}
 
-	}
+    public Sprite GetSprite(string spriteName = "")
+    {
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Images/Characters/" + characterName);
+        for(int i = 0; i < sprites.Length; i++)
+        {
+            if (sprites[i].name == spriteName)
+                return sprites[i];
+        }
+        return sprites.Length > 0 ? sprites[0] : null;
+    }
 
-	public Sprite GetSprite(int index)
-	{
-		Sprite[] sprites = Resources.LoadAll<Sprite>("Images/Characters/" + characterName);
-		return sprites[index];
-	}
-
-	public void SetBody(string spriteName)
+    public void SetBody(string spriteName)
 	{
 		renderers.bodyRenderer.sprite = GetSprite (spriteName);
 	}

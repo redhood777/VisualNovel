@@ -134,17 +134,12 @@ public class NovelController : MonoBehaviour
             Command_SetExpression(data[1]);
             return;
         }
-        if (data[0] == "stopDialogue")
+        if (data[0] == "enableImage")
         {
-            Command_StopDialogue();
+            Command_ShowImage();
             return;
         }
 
-        if (data[0] == "startDialogue")
-        {
-            Command_StartDialogue();
-            return;
-        }
     }
 
     void Command_SetLayerImage(string data, BCFC.LAYER layer)
@@ -234,14 +229,10 @@ public class NovelController : MonoBehaviour
             c.TransitionExpression(sprite, speed, false);
     }
 
-    void Command_StopDialogue()
+    void Command_ShowImage()
     {
-        TutorialEvents.instance.DisableDialogue();
+        TutorialEvents.instance.ShowImage();
     }
 
-    void Command_StartDialogue()
-    {
-        TutorialEvents.instance.EnableDialogue();
-    }
-   
+    
 }
