@@ -1,12 +1,28 @@
-Raelin "Hello there" 
+Raelin ""
+
+"Long ago in a distant land"
+
+exit(Raelin)
+
+enter(Raelin)
+
+setFace(Raelin,surprised)
+
+setBody(Raelin,SideAngleC)
+
+flip(Raelin)
+
+faceLeft(Raelin)
+
+faceRight(Raelin)
 
 +"..This is a test to check if events are working"
 
-setExpression(Raelin,body,FrontAngleC,5)
+setBody(Raelin,FrontAngle)
 
 "Press teh button to continue"
 
-enableImage()
+showImage()
 
 "DialogueStopped..if u see this bug"
 
