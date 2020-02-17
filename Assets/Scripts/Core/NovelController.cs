@@ -222,7 +222,7 @@ public class NovelController : MonoBehaviour
         string[] parameters = data.Split(',');
         string character = parameters[0];
         string region = parameters[1];
-        string expression = (parameters[2]);
+        string expression = parameters[2];
         float speed = parameters.Length == 4 ? float.Parse(parameters[3]) : 1f;
 
         Character c = CharacterManager.instance.GetCharacter(character);
@@ -243,5 +243,36 @@ public class NovelController : MonoBehaviour
     {
         TutorialEvents.instance.EnableDialogue();
     }
-   
+    void Command_Flip(string data)
+    {
+        string[] characters = data.Split(',');
+
+        foreach (string s in characters)
+        {
+            Character c = CharacterManager.instance.GetCharacter(s);
+            c.Flip();
+        }  
+    }
+
+    void Command_FaceLeft(string data)
+    {
+        string[] characters = data.Split(',');
+
+        foreach (string s in characters)
+        {
+            Character c = CharacterManager.instance.GetCharacter(s);
+            c.FaceLeft();
+        }
+    }
+
+    void Command_FaceRight(string data)
+    {
+        string[] characters = data.Split(',');
+
+        foreach (string s in characters)
+        {
+            Character c = CharacterManager.instance.GetCharacter(s);
+            c.FaceRight();
+        }
+    }
 }

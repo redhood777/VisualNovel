@@ -117,35 +117,46 @@ public class Character
 	//Begin Transitioning Images\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	public Sprite GetSprite(string spriteName = "")
 	{
-
-		Sprite sprite = Resources.Load<Sprite>(string.Format("Images/Characters/{0}_{1}", characterName, spriteName));
-		//Debug.Log(sprite.name);
-		return sprite;
-
-	}
-
-	public Sprite GetSprite(int index)
-	{
 		Sprite[] sprites = Resources.LoadAll<Sprite>("Images/Characters/" + characterName);
-		return sprites[index];
+		for(int i = 0; i < sprites.Length; i++)
+		{
+			if (sprites[i].name == spriteName)
+				return sprites[i];
+		}
+		return sprites.Length > 0 ? sprites[0] : null;
 	}
 
-	public void SetBody(string spriteName)
-	{
-		renderers.bodyRenderer.sprite = GetSprite (spriteName);
-	}
+	//public Sprite GetSprite(int index)
+	//{
+	//	Sprite[] sprites = Resources.LoadAll<Sprite>("Images/Characters/" + characterName);
+	//	return sprites[index];
+	//}
+
+	//public void SetBody(int index)
+	//{
+	//	renderers.bodyRenderer.sprite = GetSprite(index);
+	//}
+
 	public void SetBody(Sprite sprite)
 	{
 		renderers.bodyRenderer.sprite = sprite;
 	}
-
-	public void SetExpression(string spriteName)
+	public void SetBody(string spriteName)
 	{
-		renderers.expressionRenderer.sprite = GetSprite (spriteName);
+		renderers.bodyRenderer.sprite = GetSprite(spriteName);
 	}
+
+	//public void SetExpression(int index)
+	//{
+	//	renderers.expressionRenderer.sprite = GetSprite (index);
+	//}
 	public void SetExpression(Sprite sprite)
 	{
 		renderers.expressionRenderer.sprite = sprite;
+	}
+	public void SetExpression(string spriteName)
+	{
+		renderers.expressionRenderer.sprite = GetSprite(spriteName);
 	}
 
 	//Transition Body
@@ -192,7 +203,7 @@ public class Character
 		while (GlobalF.TransitionImages (ref renderers.bodyRenderer, ref renderers.allBodyRenderers, speed, smooth))
 			yield return new WaitForEndOfFrame ();
 
-		Debug.Log ("done");
+
 		StopTransitioningBody ();
 	}
 
@@ -246,6 +257,21 @@ public class Character
 
 
 	//End Transition Images\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+	public void Flip()
+	{
+		root.localScale = new Vector3(root.localScale.x * -1, 1, 1);
+	}
+
+	public void FaceLeft()
+	{
+		root.localScale = Vector3.one;
+	}
+
+	public void FaceRight()
+	{
+		root.localScale = new Vector3(-1, 1, 1);
+	}
 
 	/// <summary>
 	/// Create a new character.

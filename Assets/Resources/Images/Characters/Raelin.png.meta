@@ -19,7 +19,7 @@ TextureImporter:
     second: angry
   - first:
       213: -5762127200797985675
-    second: Raelin_angry1
+    second: angry1
   - first:
       213: -7709005579427082529
     second: blush
@@ -260,7 +260,7 @@ TextureImporter:
       name: angry
       rect:
         serializedVersion: 2
-        x: 4
+        x: 17
         y: 6511
         width: 476
         height: 717
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raelin_angry1
+      name: angry1
       rect:
         serializedVersion: 2
         x: 487

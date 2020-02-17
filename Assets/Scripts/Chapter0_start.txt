@@ -1,3 +1,0 @@
-Raelin "Hi my name is Raelin. Whats yours?"
-
-"Wait- " setExpression(Raelin,face,surprised)

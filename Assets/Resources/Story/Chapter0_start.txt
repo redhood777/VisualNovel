@@ -1,13 +1,25 @@
-Raelin "Hello there"
+setBackground(forest,false,1.0) playMusic(introSong)
 
-+"..This is a test to check if events are working"
+Raelin "<color=green><b><i>THANK YOU</i></color> for helping me out!!!</b>" 
 
-"Press teh button to continue"
+"Wait- " setExpression(Raelin,body,FrontAngleC,3.0) setExpression(Raelin,face,surprised,3.0)
 
-stopDialogue()
++"You killed the bandits out there?!"  
 
-"DialogueStopped..if u see this bug"
+narrator "Her face lit up in astonishment" 
 
-startDialogue()
+"Her eyes, traversing up and down, simply cudnt belif wat she was hearing"
 
-"That was NOICE"
+Raelin "<b>You?!</b>" move(Raelin,0.7,0) Flip(Raelin)
+
+narrator "She said jumping back"
+
+Raelin "Where will we go today?" setExpression(Raelin,body,SideAngleC) setExpression(Raelin,face,angry)
+
+"Do you even have a plan?"
+
+playMusic(peacefulForest)
+
+setPosition(Raelin,0.7,1)
+
+

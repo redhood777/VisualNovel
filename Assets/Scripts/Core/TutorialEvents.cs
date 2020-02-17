@@ -29,7 +29,7 @@ public class TutorialEvents : MonoBehaviour
     public void ButtonOn()
     {
         pressed = true;
-        Debug.Log(pressed);
+
     }
 
     public void DisableDialogue()
