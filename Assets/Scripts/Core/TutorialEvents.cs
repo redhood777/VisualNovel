@@ -8,7 +8,8 @@ public class TutorialEvents : MonoBehaviour
 
     bool pressed = false;
     public GameObject photo;
-    
+    public GameObject ob;
+
     // Start is called before the first frame update
 
     public static TutorialEvents instance;
@@ -38,5 +39,18 @@ public class TutorialEvents : MonoBehaviour
     {
         photo.SetActive(true);
     }
+    
+    public void EnableDialogue()
+    {
+        ob.SetActive(true);
+    }
 
+    public void DisableDialogue()
+    {
+        ob.SetActive(false);
+        //while(pressed != true)
+        //{
+        //    DialogueSystem.instance.isWaitingForUserInput = false;
+        //}
+    }
 }
